@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JungleBox</title>
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/desktop.css">
+
+    <link rel="stylesheet" href="./css/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <!--Block BEM-->
+      <div class="main-header__container">
+        <div class="main-header__logo">
+          <a href="./index.html">
+            <img
+              class="main-header__logo"
+              src="./img/logo-02.png"
+              alt="JungleBox"
+            />
+          </a>
+        </div>
+        <input type="checkbox" id="menu-bar" />
+        <label class="main-header__icon icon-menu" for="menu-bar"></label>
+        <nav class="main-header__menu">
+          <a class="main-header__items" href="">INICIO</a>
+          <a class="main-header__items" href="">NOSOTROS</a>
+          <a class="main-header__items" href="">SERVICIOS</a>
+          <a class="main-header__items" href="">BLOG</a>
+          <a class="main-header__items" href="">CONTACTO</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main-section">
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="./img/Banner_home_dos_mejorado.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./img/Banner_home_uno_mejorado.png" class="d-block w-100" alt="...">
+          </div>          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <!--
+          <img
+            class="main-section__carrusel--tigre"
+            src="./img/comprimidas/Banner_home_uno.jpg"
+            alt="JungleBox"
+          />
+        -->
+      </div>
+
+      <div class="main-section__nosotros">
+        <h1 class="main-section__title">NOSOTROS</h1>
+        <div class="main-section__row--nosotros">
+          <div class="main-section__div izq">
+            <p class="main-section__paragraph">
+              <span class="main-section__paragraph--span"
+                >¿Aburrido de las mismas ideas? Tú marca no comunica? ¡No en
+                nuestra Jungla!</span
+              >
+            </p>
+            <p class="main-section__paragraph nosotros">
+              Somos una agencia de Marketing Digital, Aprendizaje Virtual y
+              Producción Audiovisual con más de 10 años de experiencia en la
+              creación de soluciones digitales adecuadas a las necesidades del
+              mercado publicitario. Contamos además con diferentes líneas de
+              negocio adaptadas a los diferentes retos que presupone la creación
+              de marcas, el manejo de redes, el lenguaje audiovisual, el diseño
+              y la formación virtual como servicios a la vanguardia de los
+              acelerados cambios de nuestro tiempo. JUNGLEBOX una jungla de
+              ideas.
+            </p>
+          </div>
+          <div class="main-section__div der">
+            <video
+              class="main-section__mp4"
+              src="./video/JUNGLEBOX.mp4#t=1"
+              controls
+              preload="auto"              
+            ></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-section__servicios">
+        <div class="main-section__div--title">
+          <h1 class="main-section__title">SERVICIOS</h1>
+        </div>
+        <div class="main-section__div--paragraph">
+          <p class="main-section__paragraph servicios">
+            JungleBox, es una compañia integral de comunicaciones que cuenta con
+            una amplia experiencia para ayudarte de manera eficiente a construir
+            el poryecto que sueñas.
+          </p>
+        </div>
+        <div class="main-cards">
+          <div class="main-cards__item">
+            <div class="main-cards__img">
+              <img
+                class="main-cards__icon"
+                src="./img/01_jungle_brand.png"
+                alt="JungleBrand"
+              />
+            </div>
+            <p class="main-cards__paragraph">
+              En JungleBrand construimos marcas únicas, inspiradoras,
+              relevantes, bonitas y valiosas.
+            </p>
+            <button class="main-cards__button">Ver más</button>
+          </div>
+
+          <div class="main-cards__item--jungledigital">
+            <div class="main-cards__img">
+              <img
+                class="main-cards__icon"
+                src="./img/04_jungle_digital.png"
+                alt="JungleDigital"
+              />
+            </div>
+            <p class="main-cards__paragraph">
+              En JungleBrand construimos marcas únicas, inspiradoras,
+              relevantes, bonitas y valiosas.
+            </p>
+            <button class="main-cards__button--jungledigital">Ver más</button>
+          </div>
+
+          <div class="main-cards__item--junglefilms">
+            <div class="main-cards__img">
+              <img
+                class="main-cards__icon"
+                src="./img/03_jungle_films.png"
+                alt="JungleBrand"
+              />
+            </div>
+            <p class="main-cards__paragraph">
+              En JungleBrand construimos marcas únicas, inspiradoras,
+              relevantes, bonitas y valiosas.
+            </p>
+            <button class="main-cards__button--junglefilms">Ver más</button>
+          </div>
+
+          <div class="main-cards__item--junglelearning">
+            <div class="main-cards__img">
+              <img
+                class="main-cards__icon"
+                src="./img/02_jungle_learning.png"
+                alt="JungleBrand"
+              />
+            </div>
+            <p class="main-cards__paragraph">
+              En JungleBrand construimos marcas únicas, inspiradoras,
+              relevantes, bonitas y valiosas.
+            </p>
+            <button class="main-cards__button--junglelearning">Ver más</button>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <div class="main-section__blog">
+        <h1 class="main-section__title">BLOG</h1>
+        <div class="main-section__blog--row">
+            <div class="main-section__bloq--izq">
+              <img class="main-section__img" src="./img/blog.png" alt="JungleBox">
+            </div>
+          <div class="main-section__blog--der">
+            <h1 class="main-section__blog--title">PyMes responden  en días de alto  comercio gracias a la nube</h1>
+            <p class="main-section__paragraph">Con el transcurso de los años, las empresas colombianas han encontrado en los procesos de transformación digital un aliado para abrirse nuevos caminos en el mercado nacional e internacional. Si bien, la implementación de tecnologías puede ser un gran reto, estas herramientas permiten adaptarse a las necesidades del presente y prepararse para el futuro.</p>
+            <button  class="main-cards__button--junglelearning">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="main-section__title">CONTACTO</h1>
+      <div class="main-section__contacto">
+        
+        <div class="main-form">
+          
+          <form action="./php/enviar.php" method="post">
+            <div class="mb-3">
+              <label class="form-label">Nombre completo:</label>
+              <input type="text" class="form-control" required name="nombre">            
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Télefono:</label>
+              <input type="number" class="form-control" required name="telefono">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Asunto:</label>
+              <input type="text" class="form-control" required name="asunto">            
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensaje:</label>
+              <input type="text" class="form-control" required name="mensaje">            
+            </div>
+            <button type="submit" class="btn btn-primary" value="ENVIAR">Enviar</button>
+          </form>
+        </div>
+
+        <div class="main-form--der">
+          <p>Calle 15 #35-1</p>
+          <p>Edificio C34 Oficina 502</p>
+          <p>Medellín, Antioquia, Colombia</p>
+          <p>(+57)(4)444 13 57</p>
+          <p>(+57)313 614 7059</p>
+          <p>(+57)310 434 1492</p>
+          <p>contacto@myjunglebox.com</p>
+        </div>
+      </div>
+
+
+      <footer>
+        <p>Copyright © 2022 JungleBox - Todos los derechos reservados</p>   
+        <img class="img-footer" src="./img/logo-02.png" alt="">
+      </footer>
+
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
